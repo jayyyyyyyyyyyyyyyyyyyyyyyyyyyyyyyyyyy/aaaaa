@@ -1,0 +1,880 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local SandhurstExploits = Instance.new("ScreenGui")
+local Title = Instance.new("Frame")
+local elements = Instance.new("Frame")
+local nameTXT = Instance.new("TextLabel")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local JJAmount = Instance.new("TextBox")
+local UICorner = Instance.new("UICorner")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local JJStart = Instance.new("ImageButton")
+local UICorner_2 = Instance.new("UICorner")
+local nameTXT_2 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local nameTXT_3 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local ST = Instance.new("ImageButton")
+local UICorner_3 = Instance.new("UICorner")
+local nameTXT_4 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
+local PT = Instance.new("ImageButton")
+local UICorner_4 = Instance.new("UICorner")
+local nameTXT_5 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint")
+local FORMALS = Instance.new("ImageButton")
+local UICorner_5 = Instance.new("UICorner")
+local nameTXT_6 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_10 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_11 = Instance.new("UIAspectRatioConstraint")
+local HostName = Instance.new("TextBox")
+local UICorner_6 = Instance.new("UICorner")
+local UIAspectRatioConstraint_12 = Instance.new("UIAspectRatioConstraint")
+local nameTXT_7 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_13 = Instance.new("UIAspectRatioConstraint")
+local DrillsStart = Instance.new("ImageButton")
+local UICorner_7 = Instance.new("UICorner")
+local nameTXT_8 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_14 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_15 = Instance.new("UIAspectRatioConstraint")
+local nameTXT_9 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_16 = Instance.new("UIAspectRatioConstraint")
+local PD = Instance.new("ImageButton")
+local UICorner_8 = Instance.new("UICorner")
+local nameTXT_10 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_17 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_18 = Instance.new("UIAspectRatioConstraint")
+local UNIFORM = Instance.new("ImageButton")
+local UICorner_9 = Instance.new("UICorner")
+local nameTXT_11 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_19 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_20 = Instance.new("UIAspectRatioConstraint")
+local PRISON = Instance.new("ImageButton")
+local UICorner_10 = Instance.new("UICorner")
+local nameTXT_12 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_21 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_22 = Instance.new("UIAspectRatioConstraint")
+local PLANE = Instance.new("ImageButton")
+local UICorner_11 = Instance.new("UICorner")
+local nameTXT_13 = Instance.new("TextLabel")
+local UIAspectRatioConstraint_23 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_24 = Instance.new("UIAspectRatioConstraint")
+local underline = Instance.new("Frame")
+local UIAspectRatioConstraint_25 = Instance.new("UIAspectRatioConstraint")
+local UIAspectRatioConstraint_26 = Instance.new("UIAspectRatioConstraint")
+local TextLabel = Instance.new("TextLabel")
+local UIAspectRatioConstraint_27 = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+SandhurstExploits.Name = "SandhurstExploits"
+SandhurstExploits.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+SandhurstExploits.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+SandhurstExploits.ResetOnSpawn = false
+
+Title.Name = "Title"
+Title.Parent = SandhurstExploits
+Title.BackgroundColor3 = Color3.fromRGB(53, 49, 49)
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.744934142, 0, 0.0624382421, 0)
+Title.Size = UDim2.new(0.226279154, 0, 0.0368188508, 0)
+Title.ZIndex = 2
+
+elements.Name = "elements"
+elements.Parent = Title
+elements.BackgroundColor3 = Color3.fromRGB(34, 32, 34)
+elements.BorderSizePixel = 0
+elements.Position = UDim2.new(0, 0, 1.08000076, 0)
+elements.Size = UDim2.new(1, 0, 23.9136238, 0)
+
+nameTXT.Name = "nameTXT"
+nameTXT.Parent = elements
+nameTXT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nameTXT.BackgroundTransparency = 1.000
+nameTXT.Position = UDim2.new(0, 0, 0.0217658877, 0)
+nameTXT.Selectable = true
+nameTXT.Size = UDim2.new(1, 0, 0.0629004315, 0)
+nameTXT.Font = Enum.Font.GothamSemibold
+nameTXT.Text = "AUTO JUMPING JACKS"
+nameTXT.TextColor3 = Color3.fromRGB(255, 255, 255)
+nameTXT.TextSize = 20.000
+
+UIAspectRatioConstraint.Parent = nameTXT
+UIAspectRatioConstraint.AspectRatio = 6.648
+
+JJAmount.Name = "JJAmount"
+JJAmount.Parent = elements
+JJAmount.BackgroundColor3 = Color3.fromRGB(53, 49, 49)
+JJAmount.BorderSizePixel = 0
+JJAmount.Position = UDim2.new(0.0439999998, 0, 0.083214961, 0)
+JJAmount.Size = UDim2.new(0.899999976, 0, 0.0725360066, 0)
+JJAmount.Font = Enum.Font.Gotham
+JJAmount.PlaceholderColor3 = Color3.fromRGB(34, 32, 34)
+JJAmount.PlaceholderText = "Amount of JJs"
+JJAmount.Text = ""
+JJAmount.TextColor3 = Color3.fromRGB(255, 255, 255)
+JJAmount.TextScaled = true
+JJAmount.TextSize = 14.000
+JJAmount.TextWrapped = true
+
+UICorner.Parent = JJAmount
+
+UIAspectRatioConstraint_2.Parent = JJAmount
+UIAspectRatioConstraint_2.AspectRatio = 5.189
+
+JJStart.Name = "JJStart"
+JJStart.Parent = elements
+JJStart.BackgroundColor3 = Color3.fromRGB(0, 255, 140)
+JJStart.Position = UDim2.new(0.243999943, 0, 0.170661643, 0)
+JJStart.Size = UDim2.new(0.499140114, 0, 0.0381598473, 0)
+JJStart.ZIndex = 2
+JJStart.ImageColor3 = Color3.fromRGB(0, 255, 140)
+JJStart.ImageTransparency = 1.000
+
+UICorner_2.CornerRadius = UDim.new(0, 4)
+UICorner_2.Parent = JJStart
+
+nameTXT_2.Name = "nameTXT"
+nameTXT_2.Parent = JJStart
+nameTXT_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nameTXT_2.BackgroundTransparency = 1.000
+nameTXT_2.Position = UDim2.new(-0.00400000066, 0, 0, 0)
+nameTXT_2.Selectable = true
+nameTXT_2.Size = UDim2.new(1, 0, 1, 0)
+nameTXT_2.Font = Enum.Font.GothamSemibold
+nameTXT_2.Text = "START"
+nameTXT_2.TextColor3 = Color3.fromRGB(53, 49, 49)
+nameTXT_2.TextSize = 20.000
+nameTXT_2.TextWrapped = true
+
+UIAspectRatioConstraint_3.Parent = nameTXT_2
+UIAspectRatioConstraint_3.AspectRatio = 5.470
+
+UIAspectRatioConstraint_4.Parent = JJStart
+UIAspectRatioConstraint_4.AspectRatio = 5.470
+
+nameTXT_3.Name = "nameTXT"
+nameTXT_3.Parent = elements
+nameTXT_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nameTXT_3.BackgroundTransparency = 1.000
+nameTXT_3.Position = UDim2.new(-0.00386344246, 0, 0.240871549, 0)
+nameTXT_3.Selectable = true
+nameTXT_3.Size = UDim2.new(1, 0, 0.0629004315, 0)
+nameTXT_3.Font = Enum.Font.GothamSemibold
+nameTXT_3.Text = "UNIFORM"
+nameTXT_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+nameTXT_3.TextSize = 20.000
+
+UIAspectRatioConstraint_5.Parent = nameTXT_3
+UIAspectRatioConstraint_5.AspectRatio = 6.648
+
+ST.Name = "ST"
+ST.Parent = elements
+ST.BackgroundColor3 = Color3.fromRGB(0, 255, 140)
+ST.Position = UDim2.new(0.0810000002, 0, 0.303612262, 0)
+ST.Size = UDim2.new(0.389477879, 0, 0.0381598473, 0)
+ST.ZIndex = 2
+ST.ImageColor3 = Color3.fromRGB(0, 255, 140)
+ST.ImageTransparency = 1.000
+
+UICorner_3.CornerRadius = UDim.new(0, 4)
+UICorner_3.Parent = ST
+
+nameTXT_4.Name = "nameTXT"
+nameTXT_4.Parent = ST
+nameTXT_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nameTXT_4.BackgroundTransparency = 1.000
+nameTXT_4.Position = UDim2.new(-0.00400000066, 0, 0, 0)
+nameTXT_4.Selectable = true
+nameTXT_4.Size = UDim2.new(1, 0, 1, 0)
+nameTXT_4.Font = Enum.Font.GothamSemibold
+nameTXT_4.Text = "ST"
+nameTXT_4.TextColor3 = Color3.fromRGB(53, 49, 49)
+nameTXT_4.TextSize = 20.000
+nameTXT_4.TextWrapped = true
+
+UIAspectRatioConstraint_6.Parent = nameTXT_4
+UIAspectRatioConstraint_6.AspectRatio = 4.268
+
+UIAspectRatioConstraint_7.Parent = ST
+UIAspectRatioConstraint_7.AspectRatio = 4.268
+
+PT.Name = "PT"
+PT.Parent = elements
+PT.BackgroundColor3 = Color3.fromRGB(0, 255, 140)
+PT.Position = UDim2.new(0.523726821, 0, 0.303734094, 0)
+PT.Size = UDim2.new(0.389477879, 0, 0.0381598473, 0)
+PT.ZIndex = 2
+PT.ImageColor3 = Color3.fromRGB(0, 255, 140)
+PT.ImageTransparency = 1.000
+
+UICorner_4.CornerRadius = UDim.new(0, 4)
+UICorner_4.Parent = PT
+
+nameTXT_5.Name = "nameTXT"
+nameTXT_5.Parent = PT
+nameTXT_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nameTXT_5.BackgroundTransparency = 1.000
+nameTXT_5.Position = UDim2.new(-0.00400000066, 0, 0, 0)
+nameTXT_5.Selectable = true
+nameTXT_5.Size = UDim2.new(1, 0, 1, 0)
+nameTXT_5.Font = Enum.Font.GothamSemibold
+nameTXT_5.Text = "PT"
+nameTXT_5.TextColor3 = Color3.fromRGB(53, 49, 49)
+nameTXT_5.TextSize = 20.000
+nameTXT_5.TextWrapped = true
+
+UIAspectRatioConstraint_8.Parent = nameTXT_5
+UIAspectRatioConstraint_8.AspectRatio = 4.268
+
+UIAspectRatioConstraint_9.Parent = PT
+UIAspectRatioConstraint_9.AspectRatio = 4.268
+
+FORMALS.Name = "FORMALS"
+FORMALS.Parent = elements
+FORMALS.BackgroundColor3 = Color3.fromRGB(0, 255, 140)
+FORMALS.Position = UDim2.new(0.217662185, 0, 0.363487184, 0)
+FORMALS.Size = UDim2.new(0.5614779, 0, 0.038159851, 0)
+FORMALS.ZIndex = 2
+FORMALS.ImageColor3 = Color3.fromRGB(0, 255, 140)
+FORMALS.ImageTransparency = 1.000
+
+UICorner_5.CornerRadius = UDim.new(0, 4)
+UICorner_5.Parent = FORMALS
+
+nameTXT_6.Name = "nameTXT"
+nameTXT_6.Parent = FORMALS
+nameTXT_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nameTXT_6.BackgroundTransparency = 1.000
+nameTXT_6.Position = UDim2.new(-0.00400000066, 0, 0, 0)
+nameTXT_6.Selectable = true
+nameTXT_6.Size = UDim2.new(1, 0, 1, 0)
+nameTXT_6.Font = Enum.Font.GothamSemibold
+nameTXT_6.Text = "FORMALS"
+nameTXT_6.TextColor3 = Color3.fromRGB(53, 49, 49)
+nameTXT_6.TextSize = 20.000
+nameTXT_6.TextWrapped = true
+
+UIAspectRatioConstraint_10.Parent = nameTXT_6
+UIAspectRatioConstraint_10.AspectRatio = 6.153
+
+UIAspectRatioConstraint_11.Parent = FORMALS
+UIAspectRatioConstraint_11.AspectRatio = 6.153
+
+HostName.Name = "HostName"
+HostName.Parent = elements
+HostName.BackgroundColor3 = Color3.fromRGB(53, 49, 49)
+HostName.BorderSizePixel = 0
+HostName.Position = UDim2.new(0.0439999998, 0, 0.493572831, 0)
+HostName.Size = UDim2.new(0.899999976, 0, 0.0725360066, 0)
+HostName.Font = Enum.Font.Gotham
+HostName.PlaceholderColor3 = Color3.fromRGB(34, 32, 34)
+HostName.PlaceholderText = "Host username"
+HostName.Text = ""
+HostName.TextColor3 = Color3.fromRGB(255, 255, 255)
+HostName.TextScaled = true
+HostName.TextSize = 14.000
+HostName.TextWrapped = true
+
+UICorner_6.Parent = HostName
+
+UIAspectRatioConstraint_12.Parent = HostName
+UIAspectRatioConstraint_12.AspectRatio = 5.189
+
+nameTXT_7.Name = "nameTXT"
+nameTXT_7.Parent = elements
+nameTXT_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nameTXT_7.BackgroundTransparency = 1.000
+nameTXT_7.Position = UDim2.new(0, 0, 0.43212375, 0)
+nameTXT_7.Selectable = true
+nameTXT_7.Size = UDim2.new(0.999999762, 0, 0.062900424, 0)
+nameTXT_7.Font = Enum.Font.GothamSemibold
+nameTXT_7.Text = "AUTO DRILLS"
+nameTXT_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+nameTXT_7.TextSize = 20.000
+
+UIAspectRatioConstraint_13.Parent = nameTXT_7
+UIAspectRatioConstraint_13.AspectRatio = 6.648
+
+DrillsStart.Name = "DrillsStart"
+DrillsStart.Parent = elements
+DrillsStart.BackgroundColor3 = Color3.fromRGB(0, 255, 140)
+DrillsStart.Position = UDim2.new(0.247863382, 0, 0.581019521, 0)
+DrillsStart.Size = UDim2.new(0.499140054, 0, 0.0381598435, 0)
+DrillsStart.ZIndex = 2
+DrillsStart.ImageColor3 = Color3.fromRGB(0, 255, 140)
+DrillsStart.ImageTransparency = 1.000
+
+UICorner_7.CornerRadius = UDim.new(0, 4)
+UICorner_7.Parent = DrillsStart
+
+nameTXT_8.Name = "nameTXT"
+nameTXT_8.Parent = DrillsStart
+nameTXT_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nameTXT_8.BackgroundTransparency = 1.000
+nameTXT_8.Position = UDim2.new(-0.00400000066, 0, 0, 0)
+nameTXT_8.Selectable = true
+nameTXT_8.Size = UDim2.new(1, 0, 1, 0)
+nameTXT_8.Font = Enum.Font.GothamSemibold
+nameTXT_8.Text = "START"
+nameTXT_8.TextColor3 = Color3.fromRGB(53, 49, 49)
+nameTXT_8.TextSize = 20.000
+nameTXT_8.TextWrapped = true
+
+UIAspectRatioConstraint_14.Parent = nameTXT_8
+UIAspectRatioConstraint_14.AspectRatio = 5.470
+
+UIAspectRatioConstraint_15.Parent = DrillsStart
+UIAspectRatioConstraint_15.AspectRatio = 5.470
+
+nameTXT_9.Name = "nameTXT"
+nameTXT_9.Parent = elements
+nameTXT_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nameTXT_9.BackgroundTransparency = 1.000
+nameTXT_9.Position = UDim2.new(-0.00386344246, 0, 0.635140538, 0)
+nameTXT_9.Selectable = true
+nameTXT_9.Size = UDim2.new(1, 0, 0.062900424, 0)
+nameTXT_9.Font = Enum.Font.GothamSemibold
+nameTXT_9.Text = "TELEPORTS"
+nameTXT_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+nameTXT_9.TextSize = 20.000
+
+UIAspectRatioConstraint_16.Parent = nameTXT_9
+UIAspectRatioConstraint_16.AspectRatio = 6.648
+
+PD.Name = "PD"
+PD.Parent = elements
+PD.BackgroundColor3 = Color3.fromRGB(0, 255, 140)
+PD.Position = UDim2.new(0.0810000002, 0, 0.697881222, 0)
+PD.Size = UDim2.new(0.389477879, 0, 0.0381598435, 0)
+PD.ZIndex = 2
+PD.ImageColor3 = Color3.fromRGB(0, 255, 140)
+PD.ImageTransparency = 1.000
+
+UICorner_8.CornerRadius = UDim.new(0, 4)
+UICorner_8.Parent = PD
+
+nameTXT_10.Name = "nameTXT"
+nameTXT_10.Parent = PD
+nameTXT_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nameTXT_10.BackgroundTransparency = 1.000
+nameTXT_10.Position = UDim2.new(-0.00400000066, 0, 0, 0)
+nameTXT_10.Selectable = true
+nameTXT_10.Size = UDim2.new(1, 0, 1, 0)
+nameTXT_10.Font = Enum.Font.GothamSemibold
+nameTXT_10.Text = "PD"
+nameTXT_10.TextColor3 = Color3.fromRGB(53, 49, 49)
+nameTXT_10.TextSize = 20.000
+nameTXT_10.TextWrapped = true
+
+UIAspectRatioConstraint_17.Parent = nameTXT_10
+UIAspectRatioConstraint_17.AspectRatio = 4.268
+
+UIAspectRatioConstraint_18.Parent = PD
+UIAspectRatioConstraint_18.AspectRatio = 4.268
+
+UNIFORM.Name = "UNIFORM"
+UNIFORM.Parent = elements
+UNIFORM.BackgroundColor3 = Color3.fromRGB(0, 255, 140)
+UNIFORM.Position = UDim2.new(0.523726821, 0, 0.698003054, 0)
+UNIFORM.Size = UDim2.new(0.389477879, 0, 0.0381598435, 0)
+UNIFORM.ZIndex = 2
+UNIFORM.ImageColor3 = Color3.fromRGB(0, 255, 140)
+UNIFORM.ImageTransparency = 1.000
+
+UICorner_9.CornerRadius = UDim.new(0, 4)
+UICorner_9.Parent = UNIFORM
+
+nameTXT_11.Name = "nameTXT"
+nameTXT_11.Parent = UNIFORM
+nameTXT_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nameTXT_11.BackgroundTransparency = 1.000
+nameTXT_11.Position = UDim2.new(-0.00400000066, 0, 0, 0)
+nameTXT_11.Selectable = true
+nameTXT_11.Size = UDim2.new(1, 0, 1, 0)
+nameTXT_11.Font = Enum.Font.GothamSemibold
+nameTXT_11.Text = "UNIFORM"
+nameTXT_11.TextColor3 = Color3.fromRGB(53, 49, 49)
+nameTXT_11.TextSize = 20.000
+nameTXT_11.TextWrapped = true
+
+UIAspectRatioConstraint_19.Parent = nameTXT_11
+UIAspectRatioConstraint_19.AspectRatio = 4.268
+
+UIAspectRatioConstraint_20.Parent = UNIFORM
+UIAspectRatioConstraint_20.AspectRatio = 4.268
+
+PRISON.Name = "PRISON"
+PRISON.Parent = elements
+PRISON.BackgroundColor3 = Color3.fromRGB(0, 255, 140)
+PRISON.Position = UDim2.new(0.523726821, 0, 0.761280775, 0)
+PRISON.Size = UDim2.new(0.389477879, 0, 0.0381598435, 0)
+PRISON.ZIndex = 2
+PRISON.ImageColor3 = Color3.fromRGB(0, 255, 140)
+PRISON.ImageTransparency = 1.000
+
+UICorner_10.CornerRadius = UDim.new(0, 4)
+UICorner_10.Parent = PRISON
+
+nameTXT_12.Name = "nameTXT"
+nameTXT_12.Parent = PRISON
+nameTXT_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nameTXT_12.BackgroundTransparency = 1.000
+nameTXT_12.Position = UDim2.new(-0.00400000066, 0, 0, 0)
+nameTXT_12.Selectable = true
+nameTXT_12.Size = UDim2.new(1, 0, 1, 0)
+nameTXT_12.Font = Enum.Font.GothamSemibold
+nameTXT_12.Text = "PRISON"
+nameTXT_12.TextColor3 = Color3.fromRGB(53, 49, 49)
+nameTXT_12.TextSize = 20.000
+nameTXT_12.TextWrapped = true
+
+UIAspectRatioConstraint_21.Parent = nameTXT_12
+UIAspectRatioConstraint_21.AspectRatio = 4.268
+
+UIAspectRatioConstraint_22.Parent = PRISON
+UIAspectRatioConstraint_22.AspectRatio = 4.268
+
+PLANE.Name = "PLANE"
+PLANE.Parent = elements
+PLANE.BackgroundColor3 = Color3.fromRGB(0, 255, 140)
+PLANE.Position = UDim2.new(0.0810000002, 0, 0.761158943, 0)
+PLANE.Size = UDim2.new(0.389477879, 0, 0.0381598435, 0)
+PLANE.ZIndex = 2
+PLANE.ImageColor3 = Color3.fromRGB(0, 255, 140)
+PLANE.ImageTransparency = 1.000
+
+UICorner_11.CornerRadius = UDim.new(0, 4)
+UICorner_11.Parent = PLANE
+
+nameTXT_13.Name = "nameTXT"
+nameTXT_13.Parent = PLANE
+nameTXT_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nameTXT_13.BackgroundTransparency = 1.000
+nameTXT_13.Position = UDim2.new(-0.00400000066, 0, 0, 0)
+nameTXT_13.Selectable = true
+nameTXT_13.Size = UDim2.new(1, 0, 1, 0)
+nameTXT_13.Font = Enum.Font.GothamSemibold
+nameTXT_13.Text = "PLANE"
+nameTXT_13.TextColor3 = Color3.fromRGB(53, 49, 49)
+nameTXT_13.TextSize = 20.000
+nameTXT_13.TextWrapped = true
+
+UIAspectRatioConstraint_23.Parent = nameTXT_13
+UIAspectRatioConstraint_23.AspectRatio = 4.268
+
+UIAspectRatioConstraint_24.Parent = PLANE
+UIAspectRatioConstraint_24.AspectRatio = 4.268
+
+underline.Name = "underline"
+underline.Parent = Title
+underline.BackgroundColor3 = Color3.fromRGB(0, 255, 140)
+underline.BorderSizePixel = 0
+underline.Position = UDim2.new(0, 0, 1, 0)
+underline.Size = UDim2.new(0.999999881, 0, 0.0799999982, 0)
+
+UIAspectRatioConstraint_25.Parent = underline
+UIAspectRatioConstraint_25.AspectRatio = 125.000
+
+UIAspectRatioConstraint_26.Parent = Title
+UIAspectRatioConstraint_26.AspectRatio = 10.000
+
+TextLabel.Parent = Title
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Size = UDim2.new(0.999999881, 0, 1, 0)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "SANDHURST EXPLOITS"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+UIAspectRatioConstraint_27.Parent = TextLabel
+UIAspectRatioConstraint_27.AspectRatio = 10.000
+
+-- Scripts:
+
+local function FYBZJX_fake_script() -- Title.Dragify 
+	local script = Instance.new('LocalScript', Title)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(FYBZJX_fake_script)()
+local function IAVMT_fake_script() -- SandhurstExploits.JJ 
+	local script = Instance.new('LocalScript', SandhurstExploits)
+
+	game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.JJStart.MouseButton1Click:Connect(function()
+		local AmountOfJJs = game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.JJAmount.Text
+		local TimeBetweenMessages = 1 -- must be at least 2.5 to avoid chat limiter
+	
+		local JJtype = "JJ" -- This can be "JJ" Jumping Jacks, "HJ" Hell Jacks, or "PJ" Phonetic Jacks
+	
+		inverse_units = {
+			"VIGINTILLION ",     -- 10^63
+			"NOVEMDECILLION ",   -- 10^60
+			"OCTODECILLION ",    -- 10^57
+			"SEPTENDECILLION ",  -- 10^54
+			"SECDECILLION ",     -- 10^51
+			"QUINDECILLION ",    -- 10^48
+			"QUATTUORDECILLION ",-- 10^45
+			"TREDECILLION ",     -- 10^42
+			"DUODECILLION ",    -- 10^39
+			"UNDECILLION ",     -- 10^36
+			"DECILLION ",       -- 10^33
+			"NONILLION ",       -- 10^30
+			"OCTILLION ",       -- 10^27
+			"SEPTILLION ",      -- 10^24
+			"SEXTILLION ",      -- 10^21
+			"QUINTILLION ",     -- 10^18
+			"QUADRILLION ",     -- 10^15
+			"TRILLION ",        -- 10^12
+			"BILLION ",         -- 10^9
+			"MILLION ",         -- 10^6
+			"THOUSAND ",        -- 10^3
+		}
+		inverse_numbers = {
+			"ONE ",
+			"TWO ",
+			"THREE ",
+			"FOUR ",
+			"FIVE ",
+			"SIX ",
+			"SEVEN ",
+			"EIGHT ",
+			"NINE ",
+			"TEN ",
+			"ELEVEN ",
+			"TWELVE ",
+			"THIRTEEN ",
+			"FOURTEEN ",
+			"FIFTEEN ",
+			"SIXTEEN ",
+			"SEVENTEEN ",
+			"EIGHTEEN ",
+			"NINETEEN ",
+			"TWENTY ",
+			[30] = "THIRTY ",
+			[40] = "FORTY ",
+			[50] = "FIFTY ",
+			[60] = "SIXTY ",
+			[70] = "SEVENTY ",
+			[80] = "EIGHTY ",
+			[90] = "NINETY ",
+		}
+		phonetics = {
+			["A"] = "ALFA",
+			["B"] = "BRAVO",
+			["C"] = "CHARLIE",
+			["D"] = "DELTA",
+			["E"] = "ECHO",
+			["F"] = "FOXTROT",
+			["G"] = "GOLF",
+			["H"] = "HOTEL",
+			["I"] = "INDIA",
+			["J"] = "JULIETT",
+			["K"] = "KILO",
+			["L"] = "LIMA",
+			["M"] = "MIKE",
+			["N"] = "NOVEMBER",
+			["O"] = "OSCAR",
+			["P"] = "PAPA",
+			["Q"] = "QUEBEC",
+			["R"] = "ROMEO",
+			["S"] = "SIERRA",
+			["T"] = "TANGO",
+			["U"] = "UNIFORM",
+			["V"] = "VICTOR",
+			["W"] = "WHISKEY",
+			["X"] = "X-RAY",
+			["Y"] = "YANKEE",
+			["Z"] = "ZULU",
+		}
+	
+		function ConvertNumToWords(n)
+			local s = tostring(n)
+			local c = string.match (s, "%D")
+			if c then
+				return nil, "Non-numeric digit '" .. c .. "' in number"
+			end
+			if #s == 0 then
+				return nil, "No number supplied"
+			elseif #s > 66 then
+				return nil, "Number too big to convert to words"
+			end 
+			while #s % 3 > 0 do
+				s = "0" .. s
+			end 
+			local result = ""
+			local start = #inverse_units - (#s / 3) + 2
+	
+			for i = start, #inverse_units do
+				local group = tonumber(string.sub (s, 1, 3))
+				if group > 0 then
+					result = result .. ConvertTo999 (group) .. inverse_units [i]
+				end
+				s = string.sub(s, 4)    
+			end
+			result = result .. ConvertTo999(tonumber (s))
+			if result == "" then
+				result = "ZERO"
+			end
+			return (string.gsub(result, " +$", ""))
+		end
+	
+		function ConvertTo999(n)
+			if n <= 0 then
+				return ""
+			end
+	
+			local hundreds = math.floor(n / 100)
+			local tens = math.floor(n % 100)
+			local result = ""  
+	
+			if hundreds > 0 then
+				result = inverse_numbers[hundreds] .. "HUNDRED "
+				if tens == 0 then
+					return result
+				end 
+	
+				result = result .. "AND "
+	
+			end 
+	
+			if tens <= 20 then
+				return result .. inverse_numbers[tens] 
+			end
+	
+			result = result .. inverse_numbers[math.floor(tens / 10) * 10] 
+	
+			local digits = math.floor(n % 10)
+	
+			if digits > 0 then
+				result = result ..  inverse_numbers [digits]
+			end
+	
+			return result
+		end
+	
+		function sendChatMessage(msg)
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(msg,"All")
+		end
+	
+		local Humanoid = game.Players.LocalPlayer.Character.Humanoid
+		if JJtype == "JJ" then
+			for i=1,AmountOfJJs do
+				sendChatMessage(ConvertNumToWords(i))
+				Humanoid.Jump = true
+				wait(TimeBetweenMessages)
+				if not Humanoid then return end
+			end
+		elseif JJtype == "HJ" then
+			for i=1,AmountOfJJs do
+				local thisWord = ConvertNumToWords(i)
+				for i=1,string.len(thisWord) do
+					sendChatMessage(string.sub(thisWord,i,i))
+					Humanoid.Jump = true
+					wait(TimeBetweenMessages)
+					if not Humanoid then return end
+				end
+				sendChatMessage(thisWord)
+				Humanoid.Jump = true
+				wait(TimeBetweenMessages)
+				if not Humanoid then return end
+			end
+		elseif JJtype == "PJ" then
+			for i=1,AmountOfJJs do
+				local thisWord = ConvertNumToWords(i)
+				local ActualMessage = ""
+				for i=1,string.len(thisWord) do
+					if i > 1 then
+						ActualMessage = ActualMessage.. " "
+					end
+					local thisLetter = string.sub(thisWord,i,i)
+					local thisPhonetic = phonetics[thisLetter]
+					ActualMessage = ActualMessage.. thisPhonetic
+				end
+				sendChatMessage(ActualMessage)
+				Humanoid.Jump = true
+				wait(TimeBetweenMessages)
+				if not Humanoid then return end
+			end
+		end
+	end)
+end
+coroutine.wrap(IAVMT_fake_script)()
+local function SLYU_fake_script() -- SandhurstExploits.Uniform 
+	local script = Instance.new('LocalScript', SandhurstExploits)
+
+	game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.PT.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "UniformRack",
+			[2] = "Change",
+			[3] = "Physical"
+		}
+	
+		game:GetService("ReplicatedStorage").Remotes.ClientServer.Remotes.GameProcess:FireServer(unpack(args))
+	end)
+	
+	game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.ST.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "UniformRack",
+			[2] = "Change",
+			[3] = "Standard"
+		}
+	
+		game:GetService("ReplicatedStorage").Remotes.ClientServer.Remotes.GameProcess:FireServer(unpack(args))
+	end)
+	
+	game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.FORMALS.MouseButton1Click:Connect(function()
+		local args = {
+			[1] = "UniformRack",
+			[2] = "Change",
+			[3] = "Formal"
+		}
+	
+		game:GetService("ReplicatedStorage").Remotes.ClientServer.Remotes.GameProcess:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(SLYU_fake_script)()
+local function CNOXC_fake_script() -- SandhurstExploits.Drills 
+	local script = Instance.new('LocalScript', SandhurstExploits)
+
+	script.Parent.Title.elements.DrillsStart.MouseButton1Click:Connect(function()
+		local hostName = script.Parent.Title.elements.HostName.Text
+		local Host = game.Players:FindFirstChild(hostName)
+		local hostCharacter = Host.Character
+		local hostTorsoTouched = hostCharacter.Torso.Touched
+	
+		local Player = script.Parent.Parent.Parent
+		local Character = Player.Character
+	
+		Host.Chatted:Connect(function(Chat)
+			if Chat == "SQUAD," then
+				script.Parent.SQUAD.Value = true
+				wait(7.5)
+				script.Parent.SQUAD.Value = false
+			end
+			if Chat == "LEFT," and script.Parent.SQUAD.Value == true then
+				script.Parent.LEFT.Value = true
+				wait(15)
+				script.Parent.LEFT.Value = false
+			end
+			if Chat == "RIGHT," and script.Parent.SQUAD.Value == true then
+				script.Parent.RIGHT.Value = true
+				wait(13)
+				script.Parent.RIGHT.Value = false
+			end
+			if Chat == "ABOUT," and script.Parent.SQUAD.Value == true then
+				script.Parent.ABOUT.Value = true
+				wait(11)
+				script.Parent.ABOUT.Value = false
+			end
+			--LEFT INCLINE
+			if Chat == "INCLINE!" and script.Parent.SQUAD.Value == true and script.Parent.LEFT.Value == true then
+				script.Parent.LEFTINCLINE.Value = true
+				wait(1)
+				script.Parent.LEFTINCLINE.Value = false
+				script.Parent.SQUAD.Value = false
+				script.Parent.LEFT.Value = false
+			--RIGHT INCLINE
+			elseif Chat == "INCLINE!" and script.Parent.SQUAD.Value == true and script.Parent.RIGHT.Value == true then
+				script.Parent.RIGHTINCLINE.Value = true
+				wait(1)
+				script.Parent.RIGHTINCLINE.Value = false
+				script.Parent.SQUAD.Value = false
+				script.Parent.RIGHT.Value = false
+			end
+			--LEFT TURN
+			if Chat == "TURN!" and script.Parent.SQUAD.Value == true and script.Parent.LEFT.Value == true then
+				script.Parent.LEFTTURN.Value = true
+				wait(1)
+				script.Parent.LEFTTURN.Value = false
+				script.Parent.SQUAD.Value = false
+				script.Parent.LEFT.Value = false
+			--RIGHT TURN
+			elseif Chat == "TURN!" and script.Parent.SQUAD.Value == true and script.Parent.RIGHT.Value == true then
+				script.Parent.RIGHTTURN.Value = true
+				wait(1)
+				script.Parent.RIGHTTURN.Value = false
+				script.Parent.SQUAD.Value = false
+				script.Parent.RIGHT.Value = false
+			--ABOUT TURN
+			elseif Chat == "TURN!" and script.Parent.SQUAD.Value == true and script.Parent.ABOUT.Value == true then
+				script.Parent.ABOUTTURN.Value = true
+				wait(1)
+				script.Parent.ABOUTTURN.Value = false
+				script.Parent.SQUAD.Value = false
+				script.Parent.ABOUT.Value = false
+				
+				--Turning
+			end
+		end)
+	end)
+end
+coroutine.wrap(CNOXC_fake_script)()
+-- SandhurstExploits.Control is disabled.
+local function TTVM_fake_script() -- SandhurstExploits.Teleports 
+	local script = Instance.new('LocalScript', SandhurstExploits)
+
+	script.Parent.Title.elements.PD.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").Map.Contents.Areas.Stage.Position)
+	end)
+	
+	script.Parent.Title.elements.UNIFORM.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").Map.Contents.Spawns["British Army Personnel"].Position)
+	end)
+	
+	script.Parent.Title.elements.PLANE.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").Rings.PlaneTeleport.Hitbox.Position)
+	end)
+	
+	script.Parent.Title.elements.PRISON.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").Map.Contents.Areas["Police Station"].Position)
+	end)
+end
+coroutine.wrap(TTVM_fake_script)()
