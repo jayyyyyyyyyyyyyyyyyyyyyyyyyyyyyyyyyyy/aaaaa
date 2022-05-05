@@ -87,6 +87,9 @@ local UICorner_14 = Instance.new("UICorner")
 local nameTXT_17 = Instance.new("TextLabel")
 local UIAspectRatioConstraint_33 = Instance.new("UIAspectRatioConstraint")
 local UIAspectRatioConstraint_34 = Instance.new("UIAspectRatioConstraint")
+local GunName = Instance.new("TextBox")
+local UICorner_15 = Instance.new("UICorner")
+local UIAspectRatioConstraint_35 = Instance.new("UIAspectRatioConstraint")
 
 --Properties:
 
@@ -138,6 +141,7 @@ elements.BorderSizePixel = 0
 elements.Position = UDim2.new(0, 0, 1.07999957, 0)
 elements.Size = UDim2.new(1, 0, 19.4173985, 0)
 elements.BottomImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+elements.CanvasPosition = Vector2.new(0, 600)
 elements.CanvasSize = UDim2.new(0, 0, 50, 0)
 elements.ScrollBarThickness = 6
 elements.TopImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
@@ -176,7 +180,7 @@ UIAspectRatioConstraint_5.AspectRatio = 6.153
 KillStart.Name = "KillStart"
 KillStart.Parent = elements
 KillStart.BackgroundColor3 = Color3.fromRGB(0, 255, 140)
-KillStart.Position = UDim2.new(0.247879937, 0, 0.579528034, 0)
+KillStart.Position = UDim2.new(0.247879937, 0, 0.622984052, 0)
 KillStart.Size = UDim2.new(0.499140114, 0, 0.0381598398, 0)
 KillStart.ZIndex = 2
 KillStart.ImageColor3 = Color3.fromRGB(0, 255, 140)
@@ -238,7 +242,7 @@ UIAspectRatioConstraint_9.AspectRatio = 5.470
 KillAll.Name = "KillAll"
 KillAll.Parent = elements
 KillAll.BackgroundColor3 = Color3.fromRGB(0, 255, 140)
-KillAll.Position = UDim2.new(0.247879952, 0, 0.65782398, 0)
+KillAll.Position = UDim2.new(0.247879952, 0, 0.695847988, 0)
 KillAll.Size = UDim2.new(0.499140114, 0, 0.0349747762, 0)
 KillAll.ZIndex = 2
 KillAll.ImageColor3 = Color3.fromRGB(0, 255, 140)
@@ -496,7 +500,7 @@ KillName.Name = "KillName"
 KillName.Parent = elements
 KillName.BackgroundColor3 = Color3.fromRGB(53, 49, 49)
 KillName.BorderSizePixel = 0
-KillName.Position = UDim2.new(0.043999996, 0, 0.531657338, 0)
+KillName.Position = UDim2.new(0.043999996, 0, 0.575113356, 0)
 KillName.Size = UDim2.new(0.899999976, 0, 0.0725359991, 0)
 KillName.Font = Enum.Font.Gotham
 KillName.PlaceholderColor3 = Color3.fromRGB(34, 32, 34)
@@ -591,7 +595,7 @@ nameTXT_16.Name = "nameTXT"
 nameTXT_16.Parent = elements
 nameTXT_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 nameTXT_16.BackgroundTransparency = 1.000
-nameTXT_16.Position = UDim2.new(-0.0038635009, 0, 0.618909776, 0)
+nameTXT_16.Position = UDim2.new(-0.0038635009, 0, 0.656933784, 0)
 nameTXT_16.Selectable = true
 nameTXT_16.Size = UDim2.new(1, 0, 0.0576503463, 0)
 nameTXT_16.Font = Enum.Font.GothamSemibold
@@ -633,9 +637,29 @@ UIAspectRatioConstraint_33.AspectRatio = 5.470
 UIAspectRatioConstraint_34.Parent = DrillsStart
 UIAspectRatioConstraint_34.AspectRatio = 5.470
 
+GunName.Name = "GunName"
+GunName.Parent = elements
+GunName.BackgroundColor3 = Color3.fromRGB(53, 49, 49)
+GunName.BorderSizePixel = 0
+GunName.Position = UDim2.new(0.0362399966, 0, 0.532433331, 0)
+GunName.Size = UDim2.new(0.899999976, 0, 0.0893321857, 0)
+GunName.Font = Enum.Font.Gotham
+GunName.PlaceholderColor3 = Color3.fromRGB(34, 32, 34)
+GunName.PlaceholderText = "Gun name"
+GunName.Text = ""
+GunName.TextColor3 = Color3.fromRGB(255, 255, 255)
+GunName.TextScaled = true
+GunName.TextSize = 14.000
+GunName.TextWrapped = true
+
+UICorner_15.Parent = GunName
+
+UIAspectRatioConstraint_35.Parent = GunName
+UIAspectRatioConstraint_35.AspectRatio = 5.189
+
 -- Scripts:
 
-local function JTYAODN_fake_script() -- Title.Dragify 
+local function CQUX_fake_script() -- Title.Dragify 
 	local script = Instance.new('LocalScript', Title)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -678,8 +702,8 @@ local function JTYAODN_fake_script() -- Title.Dragify
 		end
 	end)
 end
-coroutine.wrap(JTYAODN_fake_script)()
-local function BGBFZYR_fake_script() -- SandhurstExploits.JJ 
+coroutine.wrap(CQUX_fake_script)()
+local function GYTTTZK_fake_script() -- SandhurstExploits.JJ 
 	local script = Instance.new('LocalScript', SandhurstExploits)
 
 	game.Players.LocalPlayer.PlayerGui.SandhurstExploits.Title.elements.JJStart.MouseButton1Click:Connect(function()
@@ -880,8 +904,8 @@ local function BGBFZYR_fake_script() -- SandhurstExploits.JJ
 		end
 	end)
 end
-coroutine.wrap(BGBFZYR_fake_script)()
-local function YBPNXYZ_fake_script() -- SandhurstExploits.Uniform 
+coroutine.wrap(GYTTTZK_fake_script)()
+local function QXUCUAU_fake_script() -- SandhurstExploits.Uniform 
 	local script = Instance.new('LocalScript', SandhurstExploits)
 
 	script.Parent.Title.elements.PD.MouseButton1Click:Connect(function()
@@ -900,8 +924,8 @@ local function YBPNXYZ_fake_script() -- SandhurstExploits.Uniform
 		game.Players.LocalPlayer.Character:MoveTo(game:GetService("Workspace").Map.Contents.Areas["Police Station"].Position)
 	end)
 end
-coroutine.wrap(YBPNXYZ_fake_script)()
-local function HBRIFKJ_fake_script() -- SandhurstExploits.Drills 
+coroutine.wrap(QXUCUAU_fake_script)()
+local function BEZJJNA_fake_script() -- SandhurstExploits.Drills 
 	local script = Instance.new('LocalScript', SandhurstExploits)
 
 	script.Parent.Title.elements.DrillsStart.MouseButton1Click:Connect(function()
@@ -976,9 +1000,9 @@ local function HBRIFKJ_fake_script() -- SandhurstExploits.Drills
 		end)
 	end)
 end
-coroutine.wrap(HBRIFKJ_fake_script)()
+coroutine.wrap(BEZJJNA_fake_script)()
 -- SandhurstExploits.Control is disabled.
-local function AZCOJA_fake_script() -- SandhurstExploits.Teleports 
+local function RZBCRK_fake_script() -- SandhurstExploits.Teleports 
 	local script = Instance.new('LocalScript', SandhurstExploits)
 
 	-- Script generated by SimpleSpy - credits to exx#9394
@@ -992,5 +1016,22 @@ local function AZCOJA_fake_script() -- SandhurstExploits.Teleports
 	game:GetService("ReplicatedStorage").GunSystem.Remotes.Hit:InvokeServer(unpack(args))
 	
 end
-coroutine.wrap(AZCOJA_fake_script)()
--- SandhurstExploits.Kill is disabled.
+coroutine.wrap(RZBCRK_fake_script)()
+local function CSCUSB_fake_script() -- SandhurstExploits.Kill 
+	local script = Instance.new('LocalScript', SandhurstExploits)
+
+	script.Parent.Title.elements.KillStart.MouseButton1Click:Connect(function()
+		local PlayerName = script.Parent.Title.elements.KillName.Text
+		local Gun = script.Parent.Title.elements.GunName.Text
+		
+		local args = {
+			[1] = Vector3.new(345.18206787109375, 38.2125244140625, -77.71781158447266),
+			[2] = Vector3.new(-0.7426244616508484, -0.5179067850112915, -0.42459574341773987),
+			[3] = 1600,
+			[4] = "GLOCK"
+		}
+	
+		game:GetService("ReplicatedStorage").GunSystem.Remotes.Fire:FireServer(unpack(args))
+	end)
+end
+coroutine.wrap(CSCUSB_fake_script)()
